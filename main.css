@@ -1,0 +1,99 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.profile-pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.sidenav a {
+    padding: 12px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #8f8f8f;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    /* font-size: 28px; */
+     /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+.name-container{
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.name-container h1{
+    font-size: 48px;
+}
+
+.contact-info-container{
+    border-left: 4px solid black;
+}
+.contact-info-container p{
+    font-size: 16px;
+}
+
+.name-contact-container{
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+.info-icon{
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 25px;
+}
+
+.personal-statement{
+    padding-top: 8px;
+    font-size: 18px;
+}
+
+.no-bullets{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.no-table-row-padding{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.project-experience-table-width{
+    width: 111px;
+}
+
+.no-table-row-padding > li {
+    width: 111px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
